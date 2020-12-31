@@ -1,0 +1,49 @@
+﻿@model HotelConection.PHONG
+@{
+    ViewBag.Title = "Details";
+}
+
+    <div class="wrap__layout">
+        <div style="width:70%;text-align:center">
+            @*<a href="@Url.Action("Details",new {id=item.MaPhong})">*@
+            <div class=" detail">
+                <div style="padding-left:29px">
+                    <img style="width:200px;border:3px solid gray" src="@Model.HinhChinh" alt="" class="wrap__layout--img " />
+                </div>
+                <div style="padding-left10px">
+                    <img style="width:200px;border:3px solid gray" src="@Model.HinhChinh" alt="" class="wrap__layout--img " />
+                </div>
+                <div style="padding-left10px">
+                    <img style="width:200px;border:3px solid gray" src="@Model.HinhChinh" alt="" class="wrap__layout--img " />
+                </div>
+                <div style="padding-left:59px">
+                    <p style="font-size:15px"><b>Chi tiết phòng:</b>@Model.MoTa</p>
+                </div>
+            </div>
+            <h2 class="wrap__layout--name">@Model.TenPhong</h2>
+            @*<h3 class="wrap__layout--place">@item.</h3>*@
+            <div class="wrap__layout--rating">
+                <i class="fas fa-star wrap__layout--rating-icon"></i>
+                <i class="fas fa-star wrap__layout--rating-icon"></i>
+                <i class="fas fa-star wrap__layout--rating-icon"></i>
+                <i class="fas fa-star wrap__layout--rating-icon"></i>
+                <i class="fas fa-star wrap__layout--rating-icon"></i>
+            </div>
+            <div style="padding-left: 433px" class="wrap__layout--more">
+                <i class="fas fa-user-friends wrap__layout--more-icon"></i>
+                <p class="wrap__layout--more-p"><b>Số lần được đặt</b>@Model.SoLuongDaDat</p>
+            </div>
+            <p class="wrap__layout--evaluate">
+                <b>Lượt Xem</b> @Model.LuotView
+            </p>
+            <div class="wrap__layout--vnd">
+                @*<p class="wrap__layout--discount">GIẢM GIÁ 30%</p>*@
+                @*<p class="wrap__layout--cost">2.9 đ</p>*@
+                <p class="wrap__layout--price">@Model.Gia VNĐ</p>
+            </div>
+            </a>
+
+            <button class="wrap__layout--btn">ĐẶT PHÒNG</button>
+        </div>
+    </div>
+
